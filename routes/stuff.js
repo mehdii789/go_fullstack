@@ -6,10 +6,10 @@ const auth = require('../middleware/auth');
 const stuffCtrl = require('../controllers/stuff');
 
 router.get('/', auth, stuffCtrl.getAllStuff);
-router.post('/', auth, stuffCtrl.createThing);
-router.get('/:id', auth, stuffCtrl.getOneThing);
-router.put('/:id', auth, stuffCtrl.modifyThing);
-router.delete('/:id', auth, stuffCtrl.deleteThing);
+router.post('/', auth, stuffCtrl.createsauce);
+router.get('/:id', auth, stuffCtrl.getOnesauce);
+router.put('/:id', auth, stuffCtrl.modifysauce);
+router.delete('/:id', auth, stuffCtrl.deletesauce);
 
 module.exports = router;
 
